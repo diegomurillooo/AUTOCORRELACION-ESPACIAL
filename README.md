@@ -1,12 +1,11 @@
 # AUTOCORRELACION-ESPACIAL PARA EL MUNICPIO DE DON BENITO (IGUAL PARA VILLANUEVA)
-Análisis de autocorrelación espcial. Indice de Moran y LISA.
+Análisis de autocorrelación espacial. Indice de Moran y LISA.
 En este código ejecutaremos un análisis de autocorrelación espacial para datos agregados (parcelas). 
 Lo realizaremos a dos niveles: nivel global, mediante el índice de Moran, y a nivel Local, mediante el análisis LISA.
 El área de estudio es Don Benito - Villanueva de la Serena, ambos municpios de la provincia de Badajoz.
 
 # 1. Introducción y objetivos
 En este ejercicio realizaremos un análisis de autocorrelación espacial para datos de las parcelas de ambos municipios. 
-Lo realizaremos a dos niveles: nivel global, mediante el índice de Moran, y a nivel Local, mediante el análisis LISA.
 
 
 # 2. Tratamiento de los datos

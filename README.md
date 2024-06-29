@@ -1,4 +1,4 @@
-# AUTOCORRELACION-ESPACIAL
+# AUTOCORRELACION-ESPACIAL PARA EL MUNICPIO DE DON BENITO (IGUAL PARA VILLANUEVA)
 Análisis de autocorrelación espcial. Indice de Moran y LISA.
 En este código ejecutaremos un análisis de autocorrelación espacial para datos agregados (parcelas). 
 Lo realizaremos a dos niveles: nivel global, mediante el índice de Moran, y a nivel Local, mediante el análisis LISA.

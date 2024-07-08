@@ -30,7 +30,7 @@ Posteriormente, se cargan los datos necesarios
 Una vez cargados los datos, se representan espacialmente mediante tmap.
 
     tm_shape(don_benito) +
-      tm_polygons(col="entropia_n", palette="Oranges") +
+      tm_polygons(col="entropia", palette="Oranges") +
       tm_layout(title = "Diversidad de usos del suelo (índice de entropía)")
 
 Función para eliminar polígonos sin vecinos

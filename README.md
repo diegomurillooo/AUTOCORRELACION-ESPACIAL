@@ -92,34 +92,34 @@ Pesos en formato binario
 
 Cálculo del Moran.test mediante la vecindad reina (queen)
 
-    moran_queen <- moran.test(don_benito$entropia_n, listw = pesos_queen)
+    moran_queen <- moran.test(don_benito$entropia, listw = pesos_queen)
     print(moran_queen)
 
 Cálculo del Moran.test mediante la vecindad torre (rook)
 
-    moran_rook <- moran.test(don_benito$entropia_n, listw = pesos_rook)
+    moran_rook <- moran.test(don_benito$entropia, listw = pesos_rook)
     print(moran_rook)
 
 Cálculo del Moran.test mediante las observaciones más cercanas a una región (10 vecinos)
 
-    moran_10vecinos <- moran.test(don_benito$entropia_n, listw = pesos_10vecinos)
+    moran_10vecinos <- moran.test(don_benito$entropia, listw = pesos_10vecinos)
     print(moran_10vecinos)
 
 Scatterplot de Moran para Vecindad Queen
 
-    moran.plot(don_benito$entropia_n, pesos_queen, col = 4, main = "Scatter Plot Vecindad Queen Don Benito", 
+    moran.plot(don_benito$entropia, pesos_queen, col = 4, main = "Scatter Plot Vecindad Queen Don Benito", 
                ylab = "Valores retardados", xlab = "Índice de Entropía", 
                xlim = c(0, 0.4), ylim = c(0, 1), cex.axis = 1.2, cex.lab = 1.2, cex.main = 1.4)
 
 Scatterplot de Moran para Vecindad Rook
 
-    moran.plot(don_benito$entropia_n, pesos_rook, col = 4, main = "Scatter Plot Vecindad Rook Don Benito", 
+    moran.plot(don_benito$entropia, pesos_rook, col = 4, main = "Scatter Plot Vecindad Rook Don Benito", 
                ylab = "Valores retardados", xlab = "Índice de Entropía", 
                xlim = c(0, 0.4), ylim = c(0, 1), cex.axis = 1.2, cex.lab = 1.2, cex.main = 1.4)
 
 Scatterplot de Moran para Vecindad 10 Vecinos
 
-    moran.plot(don_benito$entropia_n, pesos_10vecinos, col = 4, main = "Scatter Plot Vecindad 10 Vecinos Don Benito", 
+    moran.plot(don_benito$entropia, pesos_10vecinos, col = 4, main = "Scatter Plot Vecindad 10 Vecinos Don Benito", 
                ylab = "Valores retardados", xlab = "Índice de Entropía", 
                xlim = c(0, 0.4), ylim = c(0, 1), cex.axis = 1.2, cex.lab = 1.2, cex.main = 1.4)
 
@@ -158,10 +158,10 @@ Por último se calculan los pesos basados en la distancia usando un número limi
 
 Una vez obtenidos todos los pesos deseados se puede proceder a calcular Lisa, en este caso uno por cada tipo de pesos:
 
-    don_benito_queen<-local_moran(don_benito_queen, don_benito["entropia_n"])
-    don_benito_rook<-local_moran(don_benito_rook, don_benito["entropia_n"])
-    don_benito_distancia<-local_moran(don_benito_distancia, don_benito["entropia_n"])
-    don_benito_vecinos<-local_moran(don_benito_vecinos, don_benito["entropia_n"])
+    don_benito_queen<-local_moran(don_benito_queen, don_benito["entropia"])
+    don_benito_rook<-local_moran(don_benito_rook, don_benito["entropia"])
+    don_benito_distancia<-local_moran(don_benito_distancia, don_benito["entropia"])
+    don_benito_vecinos<-local_moran(don_benito_vecinos, don_benito["entropia"])
 
 Ahora se va a realizar Lisa para cada uno de los pesos:
 

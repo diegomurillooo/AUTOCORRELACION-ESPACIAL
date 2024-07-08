@@ -232,7 +232,7 @@ Rook (TORRE)
     
     tm_shape(don_benito) +
       tm_borders("white", lwd = 0.4) +
-      tm_fill("cluster", palette=paleta_geoda_villanueva,labels = c("no significante", "high-high", "low-low", "low-high", "high-low"))+
+      tm_fill("cluster", palette=paleta_geoda_don_benito,labels = c("no significante", "high-high", "low-low", "low-high", "high-low"))+
       tm_scale_bar(position = c("left", "bottom")) +
       tm_compass(position = c("left", "top"), type = "arrow", size = 0.5) +
       tm_layout("Clusters espaciales", legend.position = c(0.57, 0.05), legend.frame = TRUE)

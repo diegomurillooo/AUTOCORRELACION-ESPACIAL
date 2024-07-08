@@ -139,10 +139,10 @@ summary(don_benito_vecinos)
 
 
 
-don_benito_queen<-local_moran(don_benito_queen, don_benito["entropia_n"])
-don_benito_rook<-local_moran(don_benito_rook, don_benito["entropia_n"])
-don_benito_distancia<-local_moran(don_benito_distancia, don_benito["entropia_n"])
-don_benito_vecinos<-local_moran(don_benito_vecinos, don_benito["entropia_n"])
+don_benito_queen<-local_moran(don_benito_queen, don_benito["entropia"])
+don_benito_rook<-local_moran(don_benito_rook, don_benito["entropia"])
+don_benito_distancia<-local_moran(don_benito_distancia, don_benito["entropia"])
+don_benito_vecinos<-local_moran(don_benito_vecinos, don_benito["entropia"])
 
 #Ahora se va a realizar Lisa para cada uno de los pesos:
 
@@ -223,7 +223,7 @@ paleta_geoda_don_benito <- c("#eeeeee", "#FF0000", "#0000FF", "#a7adf9", "#f4ada
 
 tm_shape(don_benito) +
   tm_borders("white", lwd = 0.4) +
-  tm_fill("cluster", palette=paleta_geoda_villanueva,labels = c("no significante", "high-high", "low-low", "low-high", "high-low"))+
+  tm_fill("cluster", palette=paleta_geoda_don_benito,labels = c("no significante", "high-high", "low-low", "low-high", "high-low"))+
   tm_scale_bar(position = c("left", "bottom")) +
   tm_compass(position = c("left", "top"), type = "arrow", size = 0.5) +
   tm_layout("Clusters espaciales", legend.position = c(0.57, 0.05), legend.frame = TRUE)
